@@ -1,0 +1,41 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-ico-minus {
+    width: 12px;
+    height: 3px;
+    background-position: -5px -5px;
+}
+
+.sprite-ico-minus-dwn {
+    width: 12px;
+    height: 3px;
+    background-position: -27px -5px;
+}
+
+.sprite-ico-minus-hvr {
+    width: 12px;
+    height: 3px;
+    background-position: -49px -5px;
+}
+
+.sprite-ico-plus {
+    width: 11px;
+    height: 11px;
+    background-position: -71px -5px;
+}
+
+.sprite-ico-plus-dwn {
+    width: 11px;
+    height: 11px;
+    background-position: -92px -5px;
+}
+
+.sprite-ico-plus-hvr {
+    width: 11px;
+    height: 11px;
+    background-position: -113px -5px;
+}
