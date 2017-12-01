@@ -1,10 +1,10 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", regular, bold;
-  font-size: 60px;
-  line-height: 24px;
-  font-weight: 700;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -13,3 +13,4 @@ body {
   font-family: "PT Sans";
   font-family: 400;
   src: local("PT Sans"), local("ptsans"), url("../fonts/ptsans.woff2") format ("woff2"), url("../fonts/ptsans.woff") format ("woff"):
+}
