@@ -1,13 +1,99 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", 'Helvetica', Arial, sans-serif;
   font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  color: #ffffff;
+  line-height: 21px;
+  font-weight: regular;
+  color: #000000;
   text-transform: uppercase;
+  backround-color: #000000;
 }
+
+a {
+  text-decoration: none;
+}
+
+/* Header -------------------------------------------- */
+
+.main-navigation {
+  font-weight: bold;
+  line-height: 26px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.main-navigation a:hover {
+  color: #81b3d2;
+}
+
+.main-navigation a:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-header-logo {
+  position: centrer;
+  vertical-align: top;
+}
+
+/* Main-------------------------------------------- */
+
+.services {
+  list-style: none;
+}
+
+.services-item {
+  list-style: none;
+  text-align: center;
+}
+
+.services-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.services-item p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: regular;
+}
+
+.advantage-blue {
+  text-align: center;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.btn {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+.btn-index {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.btn-blue {
+  background-color: #81b3d2;
+}
+.btn-brown {
+  background-color: #766357;
+}
+
+
+/* Footer -------------------------------------------- */
 
 @font-face {
   font-family: "PT Sans";
