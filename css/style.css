@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "PT Sans";
+  font-family: 400;
+  src: local("PT Sans"), local("ptsans"), url("../fonts/ptsans.woff2") format ("woff2"), url("../fonts/ptsans.woff") format ("woff"):
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -84,36 +90,44 @@ a {
   font-size: 21px;
   line-height: 26px;
 }
-
+.btn-hotel {
+  font-size: 14px;
+  line-height: 21px;
+}
 .btn-blue {
   background-color: #81b3d2;
 }
-.btn-blue:hover {
+.btn-blue:hover,
+.btn-blue:focus {
   background-color: #669ec0;
 }
-.btn-blue:focus {
-  color: rgba(255, 255, 255, 0.3)
+.btn-blue:active {
+  color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
 
 .btn-brown {
   background-color: #766357;
 }
-.btn-brown:hover {
+.btn-brown:hover,
+.btn-brown:focus {
   background-color: #604e43;
 }
-.btn-brown:focus {
-  color: rgba(255, 255, 255, 0.3)
+.btn-brown:active {
+  color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
 
 
 /* Footer -------------------------------------------- */
-.footer-social {
+.footer-hashteg {font-weight: bold;
+}
+ul.footer-social {
   list-style: none;
 }
-@font-face {
-  font-family: "PT Sans";
-  font-family: 400;
-  src: local("PT Sans"), local("ptsans"), url("../fonts/ptsans.woff2") format ("woff2"), url("../fonts/ptsans.woff") format ("woff"):
+.social-button {color: #000000;
+}
+
+.footer-copyright a:focus {
+  color: #81b3d2;
 }
