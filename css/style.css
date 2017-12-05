@@ -20,6 +20,19 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* Header -------------------------------------------- */
 
 .main-navigation {
@@ -78,6 +91,97 @@ a {
   background-color: #81b3d2;
 }
 
+.filter {
+  color: #ffffff;
+  background-image: url("../img/bgfilter.jpg");
+  background-color: #000000;
+
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.filter-field
+{
+  font-weight: regular;
+  font-size: 14px;
+  line-height: 21px;}
+
+.filter-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+}
+.find {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+.sorting {
+  font-weight: regular;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+ul.sorting-list {
+  list-style: none;
+}
+.sorting-list a {
+  color: #000000;
+}
+
+
+.sorting-item a {
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #81b3d2;
+}
+.sorting-item a:hover, .sorting-item a:focus {
+  color: #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
+}
+.sorting-item a:active {
+  color: #000000;
+}
+
+.active a:active {
+  color: #81b3d2;
+}
+.active a {
+  color: #81b3d2;
+}
+
+.hotel h3 {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+.hotel a {
+  color: #000000;
+}
+
+.catalog-category a {
+  color: #000000;
+}
+.catalog-category a:hover {
+  color: #81b3d2;
+}
+.catalog-category a:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+.raiting-points {
+  font-weight: regular;
+  font-size: 14px;
+  line-height: 21px;
+  color: #666666;}
+
+.btn-transparent {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  background-color: transparent;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+}
+
 .btn {
   font: inherit;
   text-align: center;
@@ -123,6 +227,140 @@ a {
   background-color: #503e33;
 }
 
+.filter-range {
+  width: 330px;
+  margin: 50px auto; /* для демо */
+
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
 /* Footer -------------------------------------------- */
 
 .main-footer {
@@ -175,21 +413,3 @@ a {
 }
 
 /* Inner -------------------------------------------- */
-
-.filter {
-  color: #ffffff;
-  background-color: #000000;
-  background-image: url("img/bgfilter.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
-}
-
-.filter.filter-form {
-  font-size: 14px;
-  line-height: 21px;
-}
-
-.filter.filter-title h2 {
-  font-size: 16px;
-  line-height: 21px;
-}
